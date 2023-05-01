@@ -112,7 +112,7 @@ resource "google_compute_instance" "new-terraform-instance2" {
   </pre>
 
 <h2>Ejecute esto en CloudShell</h2>
-</pre>
+<pre>
 terraform import module.instances.google_compute_instance. new-terraform-instance [new-terraform-instance _ID]
 
 terraform import module.instances.google_compute_instance. new-terraform-instance2 [new-terraform-instance2_ID]
@@ -137,10 +137,11 @@ module "storage" {
   source     = "./modules/storage" }
   </pre>
 <h2>Ejecute esto en CloudShell</h2>
-
+<pre>
 terraform init
 
 terraform apply
+</pre>
 
 <h2>Actualiza el siguiente archivo main.tf</h2>
 <pre>
@@ -191,9 +192,10 @@ module "vpc" {
 }
 </pre>
 <h2>Ejecute esto en CloudShell</h2>
-
+<pre>
 terraform init
 terraform apply
+</pre>
 <h1>5- Configurar un firewall</h1>
 
 <h2>Añade lo siguiente al archivo main.tf</h2>
@@ -212,7 +214,8 @@ resource "google_compute_firewall" "tf-firewall"{
 }
 </pre>
 <h2>Ejecute esto en CloudShell</h2>
-
+<pre>
 terraform init
 terraform apply
+</pre>
 
