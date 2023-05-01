@@ -28,7 +28,7 @@ touch outputs.tf
 touch variables.tf
 cd
 <h1>(variable.tf )</h1>
-
+<pre>
 variable "region" {
  default = "us-west4"
 }
@@ -37,7 +37,7 @@ variable "zone" {
 }
 variable "project_id" {
  default = "symbolic-idea-383200"
-}
+} </pre>
 <h1>(main.tf )</h1>
 
 required_providers {
