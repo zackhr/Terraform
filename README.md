@@ -10,6 +10,7 @@ unzip terraform_1.4.2_linux_amd64.zip
 Comprobacion de la instalacion
 terraform -version
 <h1>2- Creación de los archivos de configuración </h1>
+
 touch main.tf
 touch variables.tf
 mkdir modules
@@ -151,6 +152,7 @@ terraform init
 <h1>4- Utilizar un módulo del Registro</h1>
 
 <h2>Pégalo en main.tf </h2>
+
 
 module "vpc" {
     source  = "terraform-google-modules/network/google"
