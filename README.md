@@ -2,7 +2,8 @@
 Infraestructura como Código: Terraform
 
 <h1>1-Instalación </h1>
-wget https://releases.hashicorp.com/terraform/1.4.2/terraform_1.4.2_linux_amd64.zip
+wget https://releases.hashicorp.com/terraform/1.4.2/terraform_1.4.2_linux_amd64.zip 
+
 • Descomprime el contenido
 unzip terraform_1.4.2_linux_amd64.zip
 
