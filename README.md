@@ -2,13 +2,17 @@
 Infraestructura como Código: Terraform
 
 <h1>1-Instalación </h1>
+<pre>
 wget https://releases.hashicorp.com/terraform/1.4.2/terraform_1.4.2_linux_amd64.zip 
 
 • Descomprime el contenido
+
 unzip terraform_1.4.2_linux_amd64.zip
 
 Comprobacion de la instalacion
+
 terraform -version
+</pre>
 <h1>2- Creación de los archivos de configuración </h1>
 <pre>
 touch main.tf
@@ -119,7 +123,7 @@ terraform apply
 </pre>
 <h1>3- Configurar un backend remoto</h1>
 <h2>in storage/storage.tf</h2>
-</pre>
+<pre>
 resource "google_storage_bucket" "storage-bucket" {
   name          = "terf-tf-bucket"
   location      = "us"
